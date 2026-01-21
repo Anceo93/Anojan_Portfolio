@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+input, textarea, button, select, a{
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+a:focus, a:visited, a:active {
+    outline: none;
+}
+
+
+body {
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    background: white;
+    /* background-image: url(assets/images/photography.jpeg); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+    margin: 40px 20px 0 20px;
+}
+
+
+.heading h3 {
+    font-size: 3em;
+    margin: 0;
+    color: #000000;
+
+}
+
+
+.heading h3 span{
+    font-weight: 100;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.dream img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.dream img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.popup-image span{
+    position: absolute;
+    top: 0; right: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: #fff;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 15px;
+    width: 450px;
+    object-fit: cover;
+}
+
+.logo{
+    background: black url(assets/images/lv_0_20240822101258-ezgif.com-video-to-gif-converter.gif)no-repeat center center;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    background-size: 80%;
+}
+
+/* Responsive layout */
+@media (max-width: 768px){
+    .popup-image img{
+        width: 95%;
+    }
+
+}    
+@media (max-width: 1024px) {
+    .box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        grid-template-columns: 1fr;
+    }
+}

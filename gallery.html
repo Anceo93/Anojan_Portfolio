@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceo Photo Gallery</title>
+    <link rel="icon" href="assets/images/logo3.png">
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h3>Photo <span>Gallery</span></h3>
+        </div>
+    </div>
+    <div class="box">
+        <div class="dream">
+            <img class="image" src="assets/images/gallery/1.jpg">
+            <img class="image" src="assets/images/gallery/2.jpg">
+            <img class="image" src="assets/images/gallery/3.jpg">
+            <img class="image" src="assets/images/gallery/4.jpeg">
+            <img class="image" src="assets/images/gallery/5.jpg">
+            <img class="image" src="assets/images/gallery/15.jpg">
+            <img class="image" src="assets/images/gallery/18.jpg">
+        </div>
+
+        <div class="dream">
+            <img class="image" src="assets/images/gallery/7.jpg">
+            <img class="image" src="assets/images/gallery/8.jpg">
+            <img class="image" src="assets/images/gallery/9.jpg">
+            <img class="image" src="assets/images/gallery/10.jpg">
+            <img class="image" src="assets/images/gallery/11.jpg">
+            <img class="image" src="assets/images/gallery/16.jpg">
+            
+        </div>    
+        <div class="dream">
+            <img class="image" src="assets/images/gallery/12.jpg">
+            <img class="image" src="assets/images/gallery/13.jpeg">
+            <img class="image" src="assets/images/gallery/14.jpeg">
+            <img class="image" src="assets/images/gallery/6.jpg">
+            <img class="image" src="assets/images/gallery/17.jpg">
+        </div>
+        
+        <div class="popup-image">
+            <span>&times;</span>
+            <img src="assets/images/gallery/1.jpg" alt="">
+        </div>
+
+
+    </div>
+
+    <script>
+
+
+        document.querySelectorAll('.dream img').forEach(image =>{
+            image.onclick = () =>{
+                document.querySelector('.popup-image').style.display = 'block';
+                document.querySelector('.popup-image img').src = image.getAttribute('src');
+
+            }
+        });
+
+        document.querySelector('.popup-image span').onclick = () =>{
+            document.querySelector('.popup-image').style.display = 'none';
+
+        }
+
+    </script>
+</body>
+</html>

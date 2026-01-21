@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <span class="big-circle"></span>
+      <img src="img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">
+            For collaborations, projects, or hiring inquiries, feel free to reach out.
+            Let's create something amazing together!
+          </p>
+
+          <div class="info">
+            <div class="information">
+              <div style="color: rgb(30, 159, 171);" class="icon"><i class="uil uil-map-marker"></i></div>
+              <p>83/22 Kanganamgoda road, Samagipura, Beruwala, Srilanka.</p>
+            </div>
+            <div class="information">
+              <div style="color: rgb(30, 159, 171);" class="icon"><i class="uil uil-envelope"></i></div>
+              <a style="color: #555;" href="mailto:anojandoe@gmail.com" class="contact-btn">anojandoe@gmail.com</a>
+            </div>
+            <div class="information">
+              <div style="color: rgb(30, 159, 171);" class="icon"><i class="uil uil-phone"></i></div>
+              <p>+94 768 535 157 </p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons">
+              <a href="https://github.com/Anceo93">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://www.instagram.com/anojan_ceo_93/">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/anojanceo/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.instagram.com/anojan_ceo_93/">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form action="https://api.web3forms.com/submit" method="POST" autocomplete="off">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="hidden" name="access_key" value="b4dff47b-1d50-4f1f-a2e1-3cfc75df078a">
+              <input type="text" name="name" class="input" />
+              <label for="">Username</label>
+              <span>Username</span>
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" class="input" />
+              <label for="">Email</label>
+              <span>Email</span>
+            </div>
+            <div class="input-container">
+              <input type="tel" name="phone" class="input" />
+              <label for="">Phone</label>
+              <span>Phone</span>
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" class="input"></textarea>
+              <label for="">Message</label>
+              <span>Message</span>
+            </div>
+            <input type="submit" value="Send" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
